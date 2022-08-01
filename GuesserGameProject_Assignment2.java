@@ -19,7 +19,7 @@ class guesser
 	}
 }
 
-class player
+class player1
 {
 	int playerNum;
 	
@@ -28,7 +28,24 @@ class player
 		
 		Scanner obj=new Scanner(System.in);
 		
-		System.out.println("Player- please enter the number");
+		System.out.println("Player 1- please enter the number");
+		
+		playerNum=obj.nextInt();
+		
+		return playerNum;
+		
+	}
+}
+class player2
+{
+	int playerNum;
+	
+	public int playerGuessTheNum()
+	{
+		
+		Scanner obj=new Scanner(System.in);
+		
+		System.out.println("Player 2- please enter the number");
 		
 		playerNum=obj.nextInt();
 		
@@ -37,6 +54,57 @@ class player
 	}
 }
 
+class player3
+{
+	int playerNum;
+	
+	public int playerGuessTheNum()
+	{
+		
+		Scanner obj=new Scanner(System.in);
+		
+		System.out.println("Player 3- please enter the number");
+		
+		playerNum=obj.nextInt();
+		
+		return playerNum;
+		
+	}
+}
+class player4
+{
+	int playerNum;
+	
+	public int playerGuessTheNum()
+	{
+		
+		Scanner obj=new Scanner(System.in);
+		
+		System.out.println("Player 4- please enter the number");
+		
+		playerNum=obj.nextInt();
+		
+		return playerNum;
+		
+	}
+}
+class player5
+{
+	int playerNum;
+	
+	public int playerGuessTheNum()
+	{
+		
+		Scanner obj=new Scanner(System.in);
+		
+		System.out.println("Player 5- please enter the number");
+		
+		playerNum=obj.nextInt();
+		
+		return playerNum;
+		
+	}
+}
 class umpire
 {
 	int gNum;
@@ -57,11 +125,11 @@ class umpire
 	
 	public void getNumberFromPlayers()
 	{
-		player objPlayer1Ref=new player();
-		player objPlayer2Ref=new player();
-		player objPlayer3Ref=new player();
-		player objPlayer4Ref=new player();
-		player objPlayer5Ref=new player();
+		player1 objPlayer1Ref=new player1();
+		player2 objPlayer2Ref=new player2();
+		player3 objPlayer3Ref=new player3();
+		player4 objPlayer4Ref=new player4();
+		player5 objPlayer5Ref=new player5();
 		
 		p1Num=objPlayer1Ref.playerGuessTheNum();
 		p2Num=objPlayer2Ref.playerGuessTheNum();
@@ -189,11 +257,13 @@ public class GuesserGameProject_Assignment2 {
 
 	public static void main(String[] args) {
 		/*
-		 * Scope of improvisation: I have improvised below 2 changes as suggested in live class.
+		 * Scope of improvisation: I have improvised below 3 changes as suggested in live class.
 		 * 
 		 * 1. Define the range for the value passed by guesser and players: Value should be between 0 to 10
 		 * 
 		 * 2. Adding multiple Players
+		 * 
+		 * 3. Creating separate class for each player
 		
 		 */
 		
